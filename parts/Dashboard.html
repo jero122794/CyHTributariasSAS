@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" href="../images/logoC&H.png">
+    <link rel="stylesheet" href="../components/CSS/Style_.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--Stylessheet-->
+    <link rel="stylesheet" href="/Style.css">
+</head>
+<body>
+        <div class="container">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="./images/INMOTECH LOGO.png" alt="">
+                        <h2>INMO<span class="danger">TECH</span></h2>
+                    </div>
+                    <div class="close-btn" id="close-btn">
+                        <box-icon name='x'></box-icon>
+                    </div>
+                </div>    
+                    <div class="sidebar">
+                        <a href="#">
+                            <span><box-icon name='dashboard' type='solid'></box-icon> </span> 
+                            <h3>Dashboard</h3>
+                        </a> <a href="#" class="active">
+                            <span><box-icon name='user'></box-icon></span>
+                            <h3>Usuarios</h3>
+                        </a>
+                        <a href="#">
+                            <span><box-icon name='list-ol' ></box-icon></span>
+                            <h3>Menú</h3>
+                        </a>
+                        <a href="#">
+                            <span><box-icon name='line-chart' ></box-icon></span>
+                            <h3>Ventas</h3>
+                        </a>
+                        <a href="#">
+                            <span><box-icon name='envelope' ></box-icon></span>
+                            <h3>Admin</h3>
+                            <span class="message-count">26</span>
+                        </a>
+                        <a href="#">
+                            <span><box-icon name='table' ></box-icon></span>
+                            <h3>Inmuebles</h3>
+                        </a>
+                        <a href="#">
+                            <span><box-icon name='error'></box-icon></span>
+                            <h3>Reportes</h3>
+                        </a>
+                        <a href="#">
+                            <span><box-icon name='cog' ></box-icon></span>
+                            <h3>Ajustes</h3>
+                        </a>
+                        <a href="#">
+                            <span><box-icon name='plus' ></box-icon></span>
+                            <h3>Agregar item</h3>
+                        </a>
+                        <a href="#">
+                            <span><box-icon name='log-out' ></box-icon></span>
+                            <h3>Cerrar Sesión</h3>
+                        </a>
+                    </div>
+            </aside>
+            <!------------END OF ASIDE---------------->
+    <main>
+        <h1>Dashboard</h1>
+
+        <div class="date">
+            <input type="date">
+
+        </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <span><box-icon  name='bar-chart'></box-icon></span>
+                    <div class="middle">
+                        <div class="lef">
+                            <h3>Total Inmuebles</h3>
+                            <h1>25,024</h1>
+                        </div>    
+                        <div class="progress">
+                            <svg>
+                                <circle cx ='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <small class="text-muted">Últimas 24 horas</small>
+                </div>
+                
+                    <!-----------------------END SALES------------------------->
+               
+                
+                <div class="expenses">
+                    <span><box-icon name='bar-chart-alt-2' ></box-icon></span>
+                    <div class="middle">
+                        <div class="lef">
+                            <h3>Total Interesados</h3>
+                            <h1>1.526</h1>
+                        </div>    
+                        <div class="progress">
+                            <svg>
+                                <circle cx ='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>65%</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <small class="text-muted">Últimas 24 horas</small>
+                </div>
+                    <!-----------------------END EXPENSES------------------------->    
+             
+                <div class="income">
+                    <span><box-icon name='scatter-chart' ></box-icon></span>
+                    <div class="middle">
+                        <div class="lef">
+                            <h3>Total Ventas</h3>
+                            <h1>450</h1>
+                        </div>    
+                        <div class="progress">
+                            <svg>
+                                <circle cx ='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>36%</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <small class="text-muted">Últimas 24 horas</small>
+                </div>
+                    <!-----------------------END INCOMES------------------------->
+            </div>  
+            <div class="recent-orders">
+                <h2>Interesados</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Interesados</th>
+                            <th>Código</th>
+                            <th>Área</th>
+                            <th>Estado</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>María José Guerrero</td>
+                            <td>31002</td>
+                            <td>Ventas</td>
+                            <td class="warning">Seguimiento</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Pablo Marín</td>
+                            <td>31003</td>
+                            <td>Arrendamiento</td>
+                            <td class="danger">Caliente</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+                        <tr>
+                            <td>Valentina Monsalve</td>
+                            <td>31004</td>
+                            <td>Arrendamiento</td>
+                            <td class="warning">Seguimiento
+                            <td class="primary">Detalles</td>
+                        </tr>
+                        <tr>
+                            <td>Isabella Aristizábal </td>
+                            <td>31005</td>
+                            <td>Ventas</td>
+                            <td class="sucess">Finalizado</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+                        <tr>
+                            <td>María Ramírez</td>
+                            <td>31006</td>
+                            <td>Ventas</td>
+                            <td class="warning">Seguimiento</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+                        <tr>
+                            <td>Raúl Rosas</td>
+                            <td>31007</td>
+                            <td>Arrendamiento</td>
+                            <td class="sucess">Finalizado</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+                    </tbody>    
+                </table>
+                <a href="#">Show All</a>
+            </div>   
+    </main>
+        <!-------------------END OF MAIN--------------------->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span><box-icon name='menu'></box-icon></span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active" ><box-icon name='sun' ></box-icon></span>
+                    <span class="material-icons-sharp"><box-icon name='moon' ></box-icon></span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>¡Hola!, <b>Juan</b></p>
+                        <small class="text-muted">Admin</small>    
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg">
+                    </div>
+                </div>
+            </div>
+            <!--------------*********END OF TOP******------------->
+            <div class="recent-updates">
+                <h2>Citas programadas</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Sebastían G.</b>Punto de encuentro frente a la iglesia</p>
+                            <small class="text-muted">2:00 pm</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Juana María.</b>Nos encontraremos en la estación floresta</p>
+                            <small class="text-muted">10:30 am</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-4.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Marta Sepulveda.</b>Llega en un carro rojo</p>
+                            <small class="text-muted">6:00 pm</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------END of RECENT------------------------->
+            <div class="sales-analytics">
+                <h2>Sales Analitycs</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span><box-icon name='home-alt-2'></box-icon></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Ingresos Ventas</h3>
+                            <small class="text-muted">Últimas 24 horas</small>
+                        </div>
+                        <h5 class="sucess">+39%</h5>
+                        <h3>15</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <span><box-icon name='buildings'></box-icon></box-icon></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Ingresos Arrenda</h3>
+                            <small class="text-muted">Últimas 24 horas</small>
+                        </div>
+                        <h5 class="warning">-17%</h5>
+                        <h3>8</h3>
+                    </div>
+                </div>
+                <div class="item admin">
+                    <div class="icon">
+                        <span><box-icon name='circle-three-quarter'></box-icon></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Ingresos Admin</h3>
+                            <small class="text-muted">Últimas 24 horas</small>
+                        </div>
+                        <h5 class="sucess">+25%</h5>
+                        <h3>12</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-icons-sharp"><box-icon name='plus' ></box-icon></span>
+                        <h3>Agregar Ítem</h3>
+                    </div>
+                </div>
+            </div>
+        </div>   
+</body>
+</html>
